@@ -14,6 +14,11 @@
     
 #define kSystemVersion           ([[UIDevice currentDevice] systemVersion])
 #define kLocalLanguage           ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define IOS7_AVAILABLE (kSystemVersion >= 7.0) //运行时判断系统iOS版本是否为7.0以上
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000   //编译时，有使用iOS7的方法需要用 (#ifdef IOS7_SDK_AVAILABLE  #endif) 判断
+#define IOS7_SDK_AVAILABLE 1
+#endif
 
 #define kAppVersion              [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
 #define kAppVersionDevelopment   [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
