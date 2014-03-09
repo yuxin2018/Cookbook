@@ -20,6 +20,7 @@
 		12819B801665D67E0024FBB3 /* CBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 12819B7F1665D67E0024FBB3 /* CBCommon.m */; };
 		12894E80168D3AFE00AB9108 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12894E7F168D3AFE00AB9108 /* NSData+Base64.m */; };
 		12992BA716ABE207002777D0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992BA616ABE207002777D0 /* Crashlytics.framework */; };
+		12CB978518CC4FE500C05320 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB977B18CC4FE500C05320 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +39,14 @@
 		12819B711665D6350024FBB3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		12819B731665D6350024FBB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		12819B751665D6350024FBB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		12819B7E1665D67E0024FBB3 /* CBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCommon.h; sourceTree = "<group>"; };
-		12819B7F1665D67E0024FBB3 /* CBCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCommon.m; sourceTree = "<group>"; };
-		12894E7E168D3AFE00AB9108 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		12894E7F168D3AFE00AB9108 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		12819B7E1665D67E0024FBB3 /* CBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBCommon.h; path = ../Common/CBCommon.h; sourceTree = "<group>"; };
+		12819B7F1665D67E0024FBB3 /* CBCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBCommon.m; path = ../Common/CBCommon.m; sourceTree = "<group>"; };
+		12894E7E168D3AFE00AB9108 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "../Common/NSData+Base64.h"; sourceTree = "<group>"; };
+		12894E7F168D3AFE00AB9108 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "../Common/NSData+Base64.m"; sourceTree = "<group>"; };
 		12992BA616ABE207002777D0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		12A69BCE177079E7006CE972 /* CBDefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDefineHeader.h; sourceTree = "<group>"; };
+		12A69BCE177079E7006CE972 /* CBDefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBDefineHeader.h; path = ../Common/CBDefineHeader.h; sourceTree = "<group>"; };
+		12CB977A18CC4FE500C05320 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		12CB977B18CC4FE500C05320 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,10 @@
 		12819B651665D6350024FBB3 /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
+				12CB977818CC4FE500C05320 /* Library */,
+				12CB977C18CC4FE500C05320 /* Module */,
+				12CB978318CC4FE500C05320 /* Utils */,
+				12CB978418CC4FE500C05320 /* Resources */,
 				12819B6E1665D6350024FBB3 /* CBAppDelegate.h */,
 				12819B6F1665D6350024FBB3 /* CBAppDelegate.m */,
 				12819B7C1665D6520024FBB3 /* Common */,
@@ -119,13 +126,99 @@
 		12819B7C1665D6520024FBB3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		12CB977818CC4FE500C05320 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				12CB977918CC4FE500C05320 /* JSONKit */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		12CB977918CC4FE500C05320 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				12CB977A18CC4FE500C05320 /* JSONKit.h */,
+				12CB977B18CC4FE500C05320 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		12CB977C18CC4FE500C05320 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				12CB977D18CC4FE500C05320 /* CommonModel */,
+				12CB977E18CC4FE500C05320 /* CommonView */,
+				12CB977F18CC4FE500C05320 /* ModuleSample */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		12CB977D18CC4FE500C05320 /* CommonModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonModel;
+			sourceTree = "<group>";
+		};
+		12CB977E18CC4FE500C05320 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		12CB977F18CC4FE500C05320 /* ModuleSample */ = {
+			isa = PBXGroup;
+			children = (
+				12CB978018CC4FE500C05320 /* Model */,
+				12CB978118CC4FE500C05320 /* Service */,
+				12CB978218CC4FE500C05320 /* ViewController */,
+			);
+			path = ModuleSample;
+			sourceTree = "<group>";
+		};
+		12CB978018CC4FE500C05320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12CB978118CC4FE500C05320 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		12CB978218CC4FE500C05320 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		12CB978318CC4FE500C05320 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
 				12A69BCE177079E7006CE972 /* CBDefineHeader.h */,
 				12894E7E168D3AFE00AB9108 /* NSData+Base64.h */,
 				12894E7F168D3AFE00AB9108 /* NSData+Base64.m */,
 				12819B7E1665D67E0024FBB3 /* CBCommon.h */,
 				12819B7F1665D67E0024FBB3 /* CBCommon.m */,
 			);
-			path = Common;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		12CB978418CC4FE500C05320 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +306,7 @@
 			files = (
 				12819B6C1665D6350024FBB3 /* main.m in Sources */,
 				12819B701665D6350024FBB3 /* CBAppDelegate.m in Sources */,
+				12CB978518CC4FE500C05320 /* JSONKit.m in Sources */,
 				12819B801665D67E0024FBB3 /* CBCommon.m in Sources */,
 				12894E80168D3AFE00AB9108 /* NSData+Base64.m in Sources */,
 				124593FA16A3F38D0036CEDC /* CBCustomCell.m in Sources */,
