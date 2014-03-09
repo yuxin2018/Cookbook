@@ -30,6 +30,9 @@
 		12CB97B418CC646900C05320 /* CBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97AF18CC646900C05320 /* CBCommon.m */; };
 		12CB97B518CC646900C05320 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97B218CC646900C05320 /* NSData+Base64.m */; };
 		12CB97BC18CC682300C05320 /* CBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97BB18CC682300C05320 /* CBCustomCell.m */; };
+		12CB97C418CC6A5000C05320 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97BF18CC6A5000C05320 /* IISideController.m */; };
+		12CB97C518CC6A5000C05320 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97C118CC6A5000C05320 /* IIViewDeckController.m */; };
+		12CB97C618CC6A5000C05320 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97C318CC6A5000C05320 /* IIWrapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,12 @@
 		12CB97B918CC64E200C05320 /* CBViewControllerSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBViewControllerSample.h; sourceTree = "<group>"; };
 		12CB97BA18CC682300C05320 /* CBCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomCell.h; sourceTree = "<group>"; };
 		12CB97BB18CC682300C05320 /* CBCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomCell.m; sourceTree = "<group>"; };
+		12CB97BE18CC6A5000C05320 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		12CB97BF18CC6A5000C05320 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		12CB97C018CC6A5000C05320 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		12CB97C118CC6A5000C05320 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		12CB97C218CC6A5000C05320 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		12CB97C318CC6A5000C05320 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +163,7 @@
 		12CB977818CC4FE500C05320 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				12CB97BD18CC6A5000C05320 /* ViewDeck */,
 				12CB977918CC4FE500C05320 /* JSONKit */,
 			);
 			path = Library;
@@ -272,6 +282,19 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		12CB97BD18CC6A5000C05320 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				12CB97BE18CC6A5000C05320 /* IISideController.h */,
+				12CB97BF18CC6A5000C05320 /* IISideController.m */,
+				12CB97C018CC6A5000C05320 /* IIViewDeckController.h */,
+				12CB97C118CC6A5000C05320 /* IIViewDeckController.m */,
+				12CB97C218CC6A5000C05320 /* IIWrapController.h */,
+				12CB97C318CC6A5000C05320 /* IIWrapController.m */,
+			);
+			path = ViewDeck;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CB97C418CC6A5000C05320 /* IISideController.m in Sources */,
 				12CB97BC18CC682300C05320 /* CBCustomCell.m in Sources */,
+				12CB97C518CC6A5000C05320 /* IIViewDeckController.m in Sources */,
 				12CB978E18CC5FC600C05320 /* BDUnderLineButton.m in Sources */,
 				12819B6C1665D6350024FBB3 /* main.m in Sources */,
 				12CB97B518CC646900C05320 /* NSData+Base64.m in Sources */,
@@ -368,6 +393,7 @@
 				12CB979718CC60ED00C05320 /* NSDate+TimeAgo.m in Sources */,
 				12CB97B418CC646900C05320 /* CBCommon.m in Sources */,
 				12CB978D18CC5FC600C05320 /* BDSubTabBar.m in Sources */,
+				12CB97C618CC6A5000C05320 /* IIWrapController.m in Sources */,
 				12CB97B318CC646900C05320 /* AutoCoding.m in Sources */,
 				12CB979918CC60ED00C05320 /* UILabel+ContentSize.m in Sources */,
 			);
