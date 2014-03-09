@@ -14,7 +14,7 @@
 		<string>https://github.com/yuxin2018/Cookbook/trunk</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cookbook.xcodeproj/project.xcworkspace</string>
+	<string>trunk/Cookbook.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>28FC3037-8B19-4F6D-88D1-9D08679AD509</key>

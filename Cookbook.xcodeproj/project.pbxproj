@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124593FA16A3F38D0036CEDC /* CBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 124593F916A3F38D0036CEDC /* CBCustomCell.m */; };
 		12819B601665D6350024FBB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12819B5F1665D6350024FBB3 /* UIKit.framework */; };
 		12819B621665D6350024FBB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12819B611665D6350024FBB3 /* Foundation.framework */; };
 		12819B641665D6350024FBB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12819B631665D6350024FBB3 /* CoreGraphics.framework */; };
@@ -30,11 +29,10 @@
 		12CB97B318CC646900C05320 /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97AD18CC646900C05320 /* AutoCoding.m */; };
 		12CB97B418CC646900C05320 /* CBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97AF18CC646900C05320 /* CBCommon.m */; };
 		12CB97B518CC646900C05320 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97B218CC646900C05320 /* NSData+Base64.m */; };
+		12CB97BC18CC682300C05320 /* CBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97BB18CC682300C05320 /* CBCustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		124593F816A3F38D0036CEDC /* CBCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomCell.h; sourceTree = "<group>"; };
-		124593F916A3F38D0036CEDC /* CBCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomCell.m; sourceTree = "<group>"; };
 		12819B5B1665D6350024FBB3 /* Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12819B5F1665D6350024FBB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12819B611665D6350024FBB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +75,8 @@
 		12CB97B718CC64B800C05320 /* CBModelSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBModelSample.h; sourceTree = "<group>"; };
 		12CB97B818CC64C900C05320 /* CBServiceSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBServiceSample.h; sourceTree = "<group>"; };
 		12CB97B918CC64E200C05320 /* CBViewControllerSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBViewControllerSample.h; sourceTree = "<group>"; };
+		12CB97BA18CC682300C05320 /* CBCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCustomCell.h; sourceTree = "<group>"; };
+		12CB97BB18CC682300C05320 /* CBCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,16 +125,14 @@
 		12819B651665D6350024FBB3 /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
-				12CB979118CC60ED00C05320 /* Categories */,
 				12CB977818CC4FE500C05320 /* Library */,
-				12CB977C18CC4FE500C05320 /* Module */,
 				12CB978318CC4FE500C05320 /* Utils */,
+				12CB979118CC60ED00C05320 /* Categories */,
+				12CB977C18CC4FE500C05320 /* Module */,
 				12CB978418CC4FE500C05320 /* Resources */,
 				12819B6E1665D6350024FBB3 /* CBAppDelegate.h */,
 				12819B6F1665D6350024FBB3 /* CBAppDelegate.m */,
 				12819B661665D6350024FBB3 /* Supporting Files */,
-				124593F816A3F38D0036CEDC /* CBCustomCell.h */,
-				124593F916A3F38D0036CEDC /* CBCustomCell.m */,
 			);
 			path = Cookbook;
 			sourceTree = "<group>";
@@ -191,6 +189,8 @@
 		12CB977E18CC4FE500C05320 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				12CB97BA18CC682300C05320 /* CBCustomCell.h */,
+				12CB97BB18CC682300C05320 /* CBCustomCell.m */,
 				12CB978A18CC5FC600C05320 /* BDSegmentBar.h */,
 				12CB978618CC5FC600C05320 /* BDSegmentBar.m */,
 				12CB978918CC5FC600C05320 /* BDSubTabBar.h */,
@@ -357,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CB97BC18CC682300C05320 /* CBCustomCell.m in Sources */,
 				12CB978E18CC5FC600C05320 /* BDUnderLineButton.m in Sources */,
 				12819B6C1665D6350024FBB3 /* main.m in Sources */,
 				12CB97B518CC646900C05320 /* NSData+Base64.m in Sources */,
@@ -367,7 +368,6 @@
 				12CB979718CC60ED00C05320 /* NSDate+TimeAgo.m in Sources */,
 				12CB97B418CC646900C05320 /* CBCommon.m in Sources */,
 				12CB978D18CC5FC600C05320 /* BDSubTabBar.m in Sources */,
-				124593FA16A3F38D0036CEDC /* CBCustomCell.m in Sources */,
 				12CB97B318CC646900C05320 /* AutoCoding.m in Sources */,
 				12CB979918CC60ED00C05320 /* UILabel+ContentSize.m in Sources */,
 			);
