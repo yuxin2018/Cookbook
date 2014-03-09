@@ -8,6 +8,10 @@
 
 #import "CBAppDelegate.h"
 #import "CBCommon.h"
+#import "IIViewDeckController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+#import "MainViewController.h"
 
 @implementation CBAppDelegate
 
@@ -15,8 +19,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [CBCommon deviceString];
-    // Override point for customization after application launch.
+    IIViewDeckController* deckController = [self generateControllerStack];
+    self.leftController = deckController.leftController;
+    self.centerController = deckController.centerController;
+    
+    deckController.openSlideAnimationDuration = 0.15f;
+    deckController.closeSlideAnimationDuration = 0.5f;
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     
     [Crashlytics startWithAPIKey:@"5d9825bc0a809ef8f20c33fa4ce1b7466161031d"];
@@ -49,6 +60,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (IIViewDeckController*)generateControllerStack {
+    LeftViewController* leftController = [[LeftViewController alloc] init];
+    RightViewController* rightController = [[RightViewController alloc] init];
+    
+    UIViewController *centerController = [[MainViewController alloc] init];
+    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+                                                                                    leftViewController:leftController
+                                                                                   rightViewController:rightController];
+    deckController.rightSize = 100;
+    
+    [deckController disablePanOverViewsOfClass:NSClassFromString(@"_UITableViewHeaderFooterContentView")];
+    return deckController;
 }
 
 @end

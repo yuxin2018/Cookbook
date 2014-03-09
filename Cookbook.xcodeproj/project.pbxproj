@@ -33,6 +33,10 @@
 		12CB97C418CC6A5000C05320 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97BF18CC6A5000C05320 /* IISideController.m */; };
 		12CB97C518CC6A5000C05320 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97C118CC6A5000C05320 /* IIViewDeckController.m */; };
 		12CB97C618CC6A5000C05320 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97C318CC6A5000C05320 /* IIWrapController.m */; };
+		12CB97CA18CC6D6400C05320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97C918CC6D6400C05320 /* MainViewController.m */; };
+		12CB97CD18CC6D7200C05320 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97CC18CC6D7200C05320 /* LeftViewController.m */; };
+		12CB97D018CC6D8000C05320 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97CF18CC6D8000C05320 /* RightViewController.m */; };
+		12CB97D218CC71A400C05320 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CB97D118CC71A400C05320 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,13 @@
 		12CB97C118CC6A5000C05320 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
 		12CB97C218CC6A5000C05320 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
 		12CB97C318CC6A5000C05320 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		12CB97C818CC6D6400C05320 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		12CB97C918CC6D6400C05320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		12CB97CB18CC6D7200C05320 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		12CB97CC18CC6D7200C05320 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		12CB97CE18CC6D8000C05320 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		12CB97CF18CC6D8000C05320 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		12CB97D118CC71A400C05320 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CB97D218CC71A400C05320 /* QuartzCore.framework in Frameworks */,
 				12819B601665D6350024FBB3 /* UIKit.framework in Frameworks */,
 				12819B621665D6350024FBB3 /* Foundation.framework in Frameworks */,
 				12819B641665D6350024FBB3 /* CoreGraphics.framework in Frameworks */,
@@ -123,6 +135,7 @@
 		12819B5E1665D6350024FBB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				12CB97D118CC71A400C05320 /* QuartzCore.framework */,
 				12992BA616ABE207002777D0 /* Crashlytics.framework */,
 				12819B5F1665D6350024FBB3 /* UIKit.framework */,
 				12819B611665D6350024FBB3 /* Foundation.framework */,
@@ -134,13 +147,13 @@
 		12819B651665D6350024FBB3 /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
+				12819B6E1665D6350024FBB3 /* CBAppDelegate.h */,
+				12819B6F1665D6350024FBB3 /* CBAppDelegate.m */,
 				12CB977818CC4FE500C05320 /* Library */,
 				12CB978318CC4FE500C05320 /* Utils */,
 				12CB979118CC60ED00C05320 /* Categories */,
 				12CB977C18CC4FE500C05320 /* Module */,
 				12CB978418CC4FE500C05320 /* Resources */,
-				12819B6E1665D6350024FBB3 /* CBAppDelegate.h */,
-				12819B6F1665D6350024FBB3 /* CBAppDelegate.m */,
 				12819B661665D6350024FBB3 /* Supporting Files */,
 			);
 			path = Cookbook;
@@ -181,6 +194,7 @@
 		12CB977C18CC4FE500C05320 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				12CB97C718CC6D4900C05320 /* StackBase */,
 				12CB977D18CC4FE500C05320 /* CommonModel */,
 				12CB977E18CC4FE500C05320 /* CommonView */,
 				12CB977F18CC4FE500C05320 /* ModuleSample */,
@@ -295,6 +309,19 @@
 			path = ViewDeck;
 			sourceTree = "<group>";
 		};
+		12CB97C718CC6D4900C05320 /* StackBase */ = {
+			isa = PBXGroup;
+			children = (
+				12CB97C818CC6D6400C05320 /* MainViewController.h */,
+				12CB97C918CC6D6400C05320 /* MainViewController.m */,
+				12CB97CB18CC6D7200C05320 /* LeftViewController.h */,
+				12CB97CC18CC6D7200C05320 /* LeftViewController.m */,
+				12CB97CE18CC6D8000C05320 /* RightViewController.h */,
+				12CB97CF18CC6D8000C05320 /* RightViewController.m */,
+			);
+			path = StackBase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,11 +413,14 @@
 				12CB978E18CC5FC600C05320 /* BDUnderLineButton.m in Sources */,
 				12819B6C1665D6350024FBB3 /* main.m in Sources */,
 				12CB97B518CC646900C05320 /* NSData+Base64.m in Sources */,
+				12CB97CA18CC6D6400C05320 /* MainViewController.m in Sources */,
 				12819B701665D6350024FBB3 /* CBAppDelegate.m in Sources */,
+				12CB97D018CC6D8000C05320 /* RightViewController.m in Sources */,
 				12CB97A918CC618600C05320 /* UIColor+HexValue.m in Sources */,
 				12CB978518CC4FE500C05320 /* JSONKit.m in Sources */,
 				12CB978C18CC5FC600C05320 /* BDSegmentBar.m in Sources */,
 				12CB979718CC60ED00C05320 /* NSDate+TimeAgo.m in Sources */,
+				12CB97CD18CC6D7200C05320 /* LeftViewController.m in Sources */,
 				12CB97B418CC646900C05320 /* CBCommon.m in Sources */,
 				12CB978D18CC5FC600C05320 /* BDSubTabBar.m in Sources */,
 				12CB97C618CC6A5000C05320 /* IIWrapController.m in Sources */,
@@ -474,8 +504,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cookbook/Cookbook-Prefix.pch";
 				INFOPLIST_FILE = "Cookbook/Cookbook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -491,8 +522,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cookbook/Cookbook-Prefix.pch";
 				INFOPLIST_FILE = "Cookbook/Cookbook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
