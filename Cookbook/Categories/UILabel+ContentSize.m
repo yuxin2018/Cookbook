@@ -16,3 +16,5 @@
                                               context:nil].size;
     return contentSize;
 }
+
+@end
