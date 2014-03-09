@@ -20,7 +20,15 @@
 		12819B801665D67E0024FBB3 /* CBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 12819B7F1665D67E0024FBB3 /* CBCommon.m */; };
 		12894E80168D3AFE00AB9108 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12894E7F168D3AFE00AB9108 /* NSData+Base64.m */; };
 		12992BA716ABE207002777D0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992BA616ABE207002777D0 /* Crashlytics.framework */; };
-		12CB978518CC4FE500C05320 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB977B18CC4FE500C05320 /* JSONKit.m */; };
+		12CB978518CC4FE500C05320 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB977B18CC4FE500C05320 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		12CB978C18CC5FC600C05320 /* BDSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB978618CC5FC600C05320 /* BDSegmentBar.m */; };
+		12CB978D18CC5FC600C05320 /* BDSubTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB978818CC5FC600C05320 /* BDSubTabBar.m */; };
+		12CB978E18CC5FC600C05320 /* BDUnderLineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB978B18CC5FC600C05320 /* BDUnderLineButton.m */; };
+		12CB979018CC60B000C05320 /* dubai.png in Resources */ = {isa = PBXBuildFile; fileRef = 12CB978F18CC60B000C05320 /* dubai.png */; };
+		12CB979718CC60ED00C05320 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB979318CC60ED00C05320 /* NSDate+TimeAgo.m */; };
+		12CB979818CC60ED00C05320 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12CB979418CC60ED00C05320 /* NSDateTimeAgo.bundle */; };
+		12CB979918CC60ED00C05320 /* UILabel+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB979618CC60ED00C05320 /* UILabel+ContentSize.m */; };
+		12CB97A918CC618600C05320 /* UIColor+HexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB97A818CC618600C05320 /* UIColor+HexValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +55,21 @@
 		12A69BCE177079E7006CE972 /* CBDefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBDefineHeader.h; path = ../Common/CBDefineHeader.h; sourceTree = "<group>"; };
 		12CB977A18CC4FE500C05320 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		12CB977B18CC4FE500C05320 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		12CB978618CC5FC600C05320 /* BDSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSegmentBar.m; sourceTree = "<group>"; };
+		12CB978718CC5FC600C05320 /* BDUnderLineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDUnderLineButton.h; sourceTree = "<group>"; };
+		12CB978818CC5FC600C05320 /* BDSubTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSubTabBar.m; sourceTree = "<group>"; };
+		12CB978918CC5FC600C05320 /* BDSubTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSubTabBar.h; sourceTree = "<group>"; };
+		12CB978A18CC5FC600C05320 /* BDSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSegmentBar.h; sourceTree = "<group>"; };
+		12CB978B18CC5FC600C05320 /* BDUnderLineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDUnderLineButton.m; sourceTree = "<group>"; };
+		12CB978F18CC60B000C05320 /* dubai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dubai.png; sourceTree = "<group>"; };
+		12CB979218CC60ED00C05320 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		12CB979318CC60ED00C05320 /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		12CB979418CC60ED00C05320 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
+		12CB979518CC60ED00C05320 /* UILabel+ContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ContentSize.h"; sourceTree = "<group>"; };
+		12CB979618CC60ED00C05320 /* UILabel+ContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ContentSize.m"; sourceTree = "<group>"; };
+		12CB97A718CC618600C05320 /* UIColor+HexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexValue.h"; sourceTree = "<group>"; };
+		12CB97A818CC618600C05320 /* UIColor+HexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexValue.m"; sourceTree = "<group>"; };
+		12CB97AB18CC62CC00C05320 /* CategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +118,7 @@
 		12819B651665D6350024FBB3 /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
+				12CB979118CC60ED00C05320 /* Categories */,
 				12CB977818CC4FE500C05320 /* Library */,
 				12CB977C18CC4FE500C05320 /* Module */,
 				12CB978318CC4FE500C05320 /* Utils */,
@@ -167,6 +191,12 @@
 		12CB977E18CC4FE500C05320 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				12CB978A18CC5FC600C05320 /* BDSegmentBar.h */,
+				12CB978618CC5FC600C05320 /* BDSegmentBar.m */,
+				12CB978918CC5FC600C05320 /* BDSubTabBar.h */,
+				12CB978818CC5FC600C05320 /* BDSubTabBar.m */,
+				12CB978718CC5FC600C05320 /* BDUnderLineButton.h */,
+				12CB978B18CC5FC600C05320 /* BDUnderLineButton.m */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -217,8 +247,24 @@
 		12CB978418CC4FE500C05320 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12CB978F18CC60B000C05320 /* dubai.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		12CB979118CC60ED00C05320 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				12CB97AB18CC62CC00C05320 /* CategoriesHeader.h */,
+				12CB979218CC60ED00C05320 /* NSDate+TimeAgo.h */,
+				12CB979318CC60ED00C05320 /* NSDate+TimeAgo.m */,
+				12CB979418CC60ED00C05320 /* NSDateTimeAgo.bundle */,
+				12CB979518CC60ED00C05320 /* UILabel+ContentSize.h */,
+				12CB979618CC60ED00C05320 /* UILabel+ContentSize.m */,
+				12CB97A718CC618600C05320 /* UIColor+HexValue.h */,
+				12CB97A818CC618600C05320 /* UIColor+HexValue.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +322,8 @@
 			files = (
 				12819B6A1665D6350024FBB3 /* InfoPlist.strings in Resources */,
 				12819B721665D6350024FBB3 /* Default.png in Resources */,
+				12CB979018CC60B000C05320 /* dubai.png in Resources */,
+				12CB979818CC60ED00C05320 /* NSDateTimeAgo.bundle in Resources */,
 				12819B741665D6350024FBB3 /* Default@2x.png in Resources */,
 				12819B761665D6350024FBB3 /* Default-568h@2x.png in Resources */,
 			);
@@ -304,12 +352,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CB978E18CC5FC600C05320 /* BDUnderLineButton.m in Sources */,
 				12819B6C1665D6350024FBB3 /* main.m in Sources */,
 				12819B701665D6350024FBB3 /* CBAppDelegate.m in Sources */,
+				12CB97A918CC618600C05320 /* UIColor+HexValue.m in Sources */,
 				12CB978518CC4FE500C05320 /* JSONKit.m in Sources */,
+				12CB978C18CC5FC600C05320 /* BDSegmentBar.m in Sources */,
+				12CB979718CC60ED00C05320 /* NSDate+TimeAgo.m in Sources */,
+				12CB978D18CC5FC600C05320 /* BDSubTabBar.m in Sources */,
 				12819B801665D67E0024FBB3 /* CBCommon.m in Sources */,
 				12894E80168D3AFE00AB9108 /* NSData+Base64.m in Sources */,
 				124593FA16A3F38D0036CEDC /* CBCustomCell.m in Sources */,
+				12CB979918CC60ED00C05320 /* UILabel+ContentSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
