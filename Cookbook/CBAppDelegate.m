@@ -20,11 +20,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [CBCommon deviceString];
     IIViewDeckController* deckController = [self generateControllerStack];
+    deckController.openSlideAnimationDuration = 0.15f;
+    deckController.closeSlideAnimationDuration = 0.5f;
+
     self.leftController = deckController.leftController;
     self.centerController = deckController.centerController;
     
-    deckController.openSlideAnimationDuration = 0.15f;
-    deckController.closeSlideAnimationDuration = 0.5f;
     
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = deckController;
